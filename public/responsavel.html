@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro de Responsável</title>
+    <link rel="stylesheet" href="responsavel.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Cadastrar Responsável</h2>
+        <form action="/Cadresponsaveis" method="POST">
+            <label>Nome:</label>
+            <input type="text" name="nome" required>
+            <label>E-mail:</label>
+            <input type="email" name="email">
+            <button type="submit">Salvar</button>
+        </form>
+        <a href="/tarefas">Nova Tarefa</a> <a href="/listartarefas">Lista</a>
+    </div>
+
+    <script src="./listartarefas.js"></script>
+</body>
+
+</html>

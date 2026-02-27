@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="listartarefas.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Lista de Tarefas</h1>
+        <table id="tabelatarefas">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Desc</th>
+                    <th>Data</th>
+                    <th>Resp</th>
+                    <th>Status</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <div id="formularioEdicao" style="display:none;">
+            <h2>Editar Tarefa</h2>
+            <form id="formEditarTarefa">
+                <input type="hidden" id="tarefaId">
+
+                <label>Nome:</label>
+                <input type="text" id="editarNome" required>
+
+                <label>Desc:</label>
+                <textarea id="editarDescricao" required></textarea>
+
+                <label>Data:</label>
+                <input type="date" id="editarDataEntrega" required>
+
+                <label>Resp:</label>
+                <select id="editarResponsavel" required></select>
+
+                <label>Status:</label>
+                <select id="editarStatus">
+                    <option value="incompleta">Incompleta</option>
+                    <option value="completa">Completa</option>
+                </select>
+
+                <button type="submit">Salvar</button>
+                <button type="button" id="cancelarEdicao">Cancelar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="listartarefas.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="tarefastyle.css">
+    <link rel="icon" type="image/x-icon" href="imageslogo.png"> </head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Cadastrar Tarefa</h2>
+        <form action="/tarefas" method="POST">
+            <label>Nome:</label><input type="text" name="nome" required>
+            <label>Descrição:</label><textarea name="descricao" required></textarea>
+            <label>Data:</label><input type="date" name="data_entrega" required><label>Responsável:</label>
+            <select id="responsavel" name="responsavel_id" required></select>
+            <label>Status:</label><select name="status">
+                <option value="incompleta">Incompleta</option>
+                <option value="completa">Completa</option>
+            </select>
+            <button type="submit">Salvar</button>
+        </form><a href="/responsaveis">Novo Responsável</a>
+        <a href="/listartarefas">Lista</a>
+    </div>
+    <script src="responsavel.js"></script>
+
+</body>
+
+</html>
